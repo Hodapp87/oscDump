@@ -1,9 +1,17 @@
 This is a Processing sketch I put together for my own use. What it does is
 monitor the specified port for OSC (Open Sound Control) messages and then
-output the address pattern and all the arguments.
-Clicking the tiny window also sends out an example message.
+output the address pattern and all the arguments, along with creating a
+table of which messages it's seen (and how many times).
 
-At the moment it does not support all types of arguments.
+The dump of the address pattern and arguments occurs in the Processing
+console. The display of the address patterns and how many times each has
+been seen is shown in the graphical Processing window.
+
+Clicking in the window also sends out an example message. If you're set to
+broadcast on the same port on which you listen, you should see the message.
+
+At the moment it does not support all types of arguments. That's a work in
+progress.
 
 This is based on oscP5parsing from the oscP5 examples.
 
